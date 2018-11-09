@@ -20,31 +20,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from gemini device
-$(call inherit-product, device/xiaomi/gemini/device.mk)
+$(call inherit-product, device/xiaomi/natrium/device.mk)
 
-# Inherit some common AEX stuff.
+# Inherit some common Syberia stuff.
 $(call inherit-product, vendor/syberia/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := syberia_gemini
-PRODUCT_DEVICE := gemini
+PRODUCT_NAME := syberia_natrium
+PRODUCT_DEVICE := natrium
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 5
+PRODUCT_MODEL := MI 5s Plus
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="gemini" \
-    PRODUCT_NAME="gemini" \
-    PRIVATE_BUILD_DESC="gemini-user 8.0.0 OPR1.170623.032 V9.6.1.0.OAAMIFD release-keys"
+    TARGET_DEVICE="natrium" \
+    PRODUCT_NAME="natrium" \
+    PRIVATE_BUILD_DESC="natrium-user 7.0 NRD90M V9.6.2.0.NBGMIFD release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/gemini/gemini:8.0.0/OPR1.170623.032/V9.6.1.0.OAAMIFD:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/natrium/natrium:7.0/NRD90M/V9.6.2.0.NBGMIFD:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
 
 TARGET_BOOT_ANIMATION_RES := 1080
 export SKIP_ABI_CHECKS := true
-
-SYBERIA_BUILD_TYPE := OFFICIAL
