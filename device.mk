@@ -173,8 +173,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.qcom.sh \
     init.target.rc 
-#    init.spectrum.rc \
-#    init.spectrum.sh
 
 # CMHW
 PRODUCT_PACKAGES += \
