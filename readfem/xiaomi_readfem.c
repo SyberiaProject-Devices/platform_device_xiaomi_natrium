@@ -27,7 +27,7 @@
 #define ISMATCH(a, b) (!strncmp(a, b, PROP_VALUE_MAX))
 
 #define BDWLAN_FILE "/sys/module/cnss_common/parameters/bdwlan_file"
-#define FF_FLAG_FILE "/persist/ff_flag"
+#define FF_FLAG_FILE "/mnt/vendor/persist/ff_flag"
 
 #define SCORPIO_BDWLAN "bd30_a4.bin"
 #define CAPRICORN_BDWLAN "bd30_a7.bin"
